@@ -1,0 +1,21 @@
+Methodology of RP ML model based on R
+1. Data input from "application_train.xlsx"
+2. Removal of keys (id)
+3. Removal of columns with > 80% missing values
+?4. PCA on AMT_REQ_CREDIT_BUREAU
+5. Train Test split
+6. Imputation of missing values using mean of each splitted group
+7. # Variable selection on key columns (can do PCA reduce further number of features)
+8. Define Target variable for training and testing set
+9. Use balanced or imbalanced datasets
+10. Fit model with training data
+11. Predict with testing data
+12. Evaluate PPR and FPR using Confusion Rate
+13. Create ROC Model
+
+10-subs
+a. Logistic Regressor
+b. Random Tree
+c. XGBoost
+d. Neural Network
+e. ! SMOTE for imbalanced datasets
